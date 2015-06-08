@@ -3,7 +3,7 @@
 # This Dockerfile will build a small davmail docker image based on Alpine Linux
 
 FROM alpine
-MAINTAINER wid "widder@posteo.de"
+MAINTAINER widder <widder512@yahoo.de>
 
 RUN apk add --update bash openjdk7-jre-base ca-certificates && \
   find /usr/share/ca-certificates/mozilla/ -name *.crt -exec keytool -import -trustcacerts \
